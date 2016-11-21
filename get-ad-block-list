@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# Down the DNSmasq formatted ad block list
+curl "http://pgl.yoyo.org/adservers/serverlist.php?hostformat=dnsmasq&showintro=0&mimetype=plaintext" > /etc/NetworkManager/dnsmasq.d/adblock.conf
